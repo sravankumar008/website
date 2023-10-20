@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>yadgarpally dagads</title>
+ <style>
+body {
+ background-color: hsl(211, 18%, 25%);
+ color: white;
+}
+h1{
+    display:flex;
+ justify-content: center;
+ border-radius: 4px;
+ padding: 8px;
+
+
+
+}
+
+#mySelect{
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 8px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+
+
+
+
+
+}
+
+form {
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+ align-items: center;
+ justify-content: center;
+ display: flex;
+
+
+ 
+
+}
+
+input {
+ padding: 8px;
+ margin-bottom: 16px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+}
+
+button {
+ padding: 8px 16px;
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+button:hover {
+ background-color: #45a049;
+}
+
+button:active {
+ background-color: #3e8e41;
+ transform: translateY(1px);
+}
+
+
+ </style>
+</head>
+<body>
+    <h1>yadgarpally dagads</h1>
+    
+<select id="mySelect" onchange="showDiv()">
+ <option value="">CANDIDATE NAMES</option>
+ <option value="NY">sravan</option>
+ <option value="LA">pavan</option>
+ <option value="Chicago">mahesh</option>
+ <option value="Houston">linga swamy</option>
+
+</select>
+
+<div id="NY" style="display:none">
+ <h2>sravan</h2>
+ <p>'manchodu' per loney vundhi manchodu ani ,em alavatlu lev ,
+beerlu antey emito  kuda thelvadu mer andhar koncham ardhika shayam chesthey movies ki veltha bruh.</p>
+</div>
+
+<div id="LA" style="display:none">
+ <h2>pavan</h2>
+ 
+ <p>called as "betting raja",betting lo paisal esi vunnay anni ammukovalsina paristhiti ochindhi mer andhar kanarinchi pisal account lo esthey oka beer thagi pantha 
+</p>
+</div>
+
+<div id="Chicago" style="display:none">
+ <h2>mahesh</h2>
+ <p>"reddy anna" ga bookie nadipincheydhi manamey ,ochina salary antha reddy anna gadu dengi thinadu ,vunnay poinay ,vunchukundhi kuda poindhi ,
+dayachesi account lo paisal eyyandi icc matchulu nadusthunay reddy anna bookie lo eskoni adaniki paisal lev .immediate transaction karo bhai 
+</p>
+</div>
+
+<div id="Houston" style="display:none">
+ <h2>linga swamy</h2>
+ <p>"kasta jeevi" em led bruh actor aiedham ani fix aiena mer andhar kocham donation chesthey tiifinlu thinta,
+and dont worry nen director aienaka ninney na movie lo heroni chestha
+</p>
+</div>
+
+</div>
+
+
+
+ <form id="form">
+     <h2 id="new">ardhika sahayam cheyandi</h2>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <button type="submit" id="submit-btn">Submit</button>
+    <h2>paytm:6300234381</h1>
+ </form>
+ <script>
+function showDiv() {
+   var select = document.getElementById("mySelect");
+   var value = select.options[select.selectedIndex].value;
+   var divs = document.getElementsByTagName("div");
+   for (var i = 0; i < divs.length; i++) {
+     divs[i].style.display = divs[i].id == value ? "block" : "none";
+   }
+}
+</script>
+</body>
+</html>
